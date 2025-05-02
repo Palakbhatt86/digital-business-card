@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Solution</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<section>
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a class="navbar-logo" href="/"><img src="Images/logo-1.png" alt="logo"></a>
+                </nav>
+            </header>
+            <!-- ====== End of Header section ====== -->
+            <!-- ====== hero section ====== -->
+
+            <section class="hero">
+                <div class="center-data">
+                    <h1>branding and digital marketing</h1>
+                    <h3>Designing Your Tomorrow</h3>
+                    <h3>web | graphic | media
+                    </h3>
+                </div>
+                <div class="hero-container" data-aos="zoom-in">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>APEX SOLUTION</h2>
+                                <p>Manoj Mehta<br>(Founder)</p>
+                            </div>
+                        
+                            <div class="hero-social-icon flex">
+                                <a href="https://www.facebook.com/DesigningYourTomorrow/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/designingyourtomorrow/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/company/designingyourtomorrow/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://wa.me/+919322212892"><i class="fa-brands fa-whatsapp"></i></a>
+                                <hr class="d-md-block d-sm-none d-none">
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="contact-info">
+                                        <i class="fas fa-phone"></i>
+                                        <span><a href="tel:+919322212892">+91-9322212892</a></span>
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="fas fa-envelope"></i>
+                                        <span><a href="mailto:manojapex@gmail.com,manoj@apexsolution.in">manojapex@gmail.com / manoj@apexsolution.in</a></span>
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>82/84, Pratap Cottage, Ground Floor, Daulat Nagar, Road No.8, Borivali (east), Mumbai-400066. India.</span>
+                                    </div>
+                                    <div class="contact-info">
+                                        <i class="fa-sharp fa-regular fa-clock"></i>
+                                        <span>Monday – Friday : 8:00am – 7:00pm.</span>
+                                    </div>
+                                    <div class="contact-info">
+                                       <i class="fas fa-globe"></i>
+                                        <span><a href="http://www.apexsolutions.in">http://www.apexsolutions.in</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="contact-share">
+                        <form id="whatsappForm">
+                            <div class="form-group" id="share">
+                                <label for="countryCode">Select Country:</label>
+                                <select id="countryCode" class="js-example-basic-single">
+                                    <option value="1" data-flag="🇺🇸">United States (+1)</option>
+                                    <option value="44" data-flag="🇬🇧">United Kingdom (+44)</option>
+                                    <option value="91" data-flag="🇮🇳">India (+91)</option>
+                                    <option value="61" data-flag="🇦🇺">Australia (+61)</option>
+                                    <option value="81" data-flag="🇯🇵">Japan (+81)</option>
+                                    <option value="49" data-flag="🇩🇪">Germany (+49)</option>
+                                    <option value="33" data-flag="🇫🇷">France (+33)</option>
+                                    <option value="39" data-flag="🇮🇹">Italy (+39)</option>
+                                    <option value="7" data-flag="🇷🇺">Russia (+7)</option>
+                                    <option value="86" data-flag="🇨🇳">China (+86)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber">Enter Phone Number:</label>
+                                <input type="text" id="phoneNumber" placeholder="1234567890" required>
+                            </div>
+                            <button type="button" class="whatsapp-button" onclick="redirectToWhatsApp()">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="20" height="20">
+                                Share on WhatsApp
+                            </button>
+                            
+                        </form>
+                        <button class="save-contact-button" id="download-vcard">Save to Contacts <i class="fa fa-download"></i></button>
+                    </div>
+                </div>
+                        <script>
+                           document.addEventListener('DOMContentLoaded', function() {
+    const downloadButton = document.getElementById('download-vcard');
+
+    downloadButton.addEventListener('click', function() {
+        const vCardData = `BEGIN:VCARD
+FN:Manoj Mehta
+ORG:Apex Solution
+TITLE:Branding And Digital Marketing
+TEL;TYPE=PHONE:+919322212892
+ADR;TYPE=OFFICE:;;82/84 Pratap Cottage;Ground Floor Daulat Nagar;Road No. 8;Borivali (East);Mumbai;400066;India
+EMAIL;type=EMAIL:manojapex@gmail.com
+EMAIL;TYPE=OTHER EMAIL:manoj@apexsolutions.in
+WEBSITE;TYPE=WEBSITE:http://www.apexsolutions.in
+END:VCARD`;
+
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'ApexSolution.vcf';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
+});
+
+
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+
+function redirectToWhatsApp() {
+    const countryCode = document.getElementById('countryCode').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const websiteUrl = "http://www.apexsolutions.in"; // Replace with your website URL
+
+    if (phoneNumber.trim() === "") {
+        alert("Please enter a phone number.");
+        return;
+    }
+
+    const fullPhoneNumber = countryCode + phoneNumber;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${fullPhoneNumber}&text=Check%20out%20our%20website:%20${encodeURIComponent(websiteUrl)}`;
+
+    window.open(whatsappUrl, '_blank');
+}
+ </script>                      
+</div>  
+</div>
+</div>
+</div>
+
+<hr class="hr2">
+                    </div>
+                </div>
+            </section>
+            
+             
+        <!-- ====== card section ====== -->
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="ImageS/ICON/feature1.png" class="feature-img1"></figure>
+                            <h4>customised solution</h4>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/feature2.png" class="feature-img2"></figure>
+                            <h4>best approach</h4>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-up">
+                        <div>
+                            <figure><img src="Images/icon/feature3.png" class="feature-img3"></figure>
+                            <h4>creative solution</h4>
+                        </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down">
+                        <div>
+                            <figure><img src="Images/icon/feature4.png" class="feature-img4"></figure>
+                            <h4>expert team</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of card section ====== -->
+
+         <!-- ====== About us section ====== -->
+ <section class="about" id="about us">
+    <div class="container">
+        <div class="about-data flex-sb">
+            <div class="w-50" data-aos="fade-up">
+                <div class="flex about-title">
+                    <hr>
+                    <h5>ABOUT US</h5>
+                </div>
+                <h2>Complete creative shop
+                </h2>
+                <p>We fulfill your quest for the best. Be it the best way to portray 
+                    yourself in print or showcase your company 
+                    on the web, we promise to present the best side 
+                    of you to the world.
+                    In today’s age of choice, competition and 
+                    challenge, you need to present yourself in the 
+                    best possible manner to ensure growth and a 
+                    successful future. That’s precisely what we aim to 
+                    help you with - catching attention of the world 
+                    with engaging solutions. 
+                    We would help you clear the clutter away, 
+                    stand out and be heard in the competitive scenario.
+                </p>
+                <div class="flex gap-1 mt-15">
+                    <i class="fa-solid fa-check"></i>
+                    <h5>Taking pride in being 
+                        ‘complete’ in the real sense, we strive to fulfill all 
+                        your Branding, Promotion & online Marketing 
+                        needs - both online & offline. 
+                    </h5>
+                </div>
+                <div class="flex gap-1 mt-15">
+                    <i class="fa-solid fa-check"></i>
+                    <h5>We believe in striking a balance between Quality, Effective and Engaging solutions, timeliness and of course, the urge to do a little extra, always….</h5>
+                </div>
+            </div>
+            <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                <div>
+                    <figure>
+                        <img src="Images/about.png" alt="img">
+                    </figure>
+                </div>
+                <div class="ab-count flex flex-center">
+                    <div class="flex flex-center">
+                        <h2>19</h2>
+                        <h2>+</h2>
+                    </div>
+                    <p>years of experience</p>
+                </div>
+                <div class="about-hr flex gap-1">
+                    <hr>
+                    <h6>Who we are</h6>
+                </div>
+            </div>
+        </div>
+    </div>   
+</section>
+<!-- ====== End of About us section ====== -->
+
+<!-- ====== Services section ====== -->
+<section class="service" id="service">
+    <div class="service-1">
+        <div class="container">
+            <div class="service-data" data-aos="fade-up">
+                <div class="w-66">
+                    <div class="flex gap-1">
+                        <hr class="service-hr1">
+                        <h5>OUR SERVICES</h5>
+                    </div>
+                    <h2 class="mt-15">Services We Offer</h2>
+                    <p class="mt-15">In today’s age of choice, competition and challenge, businesses need to have their presence in the best possible manner to ensure growth and a sustainable future. That’s precisely what we aim to help our clients – grabbing attention of the world with engaging solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="flex gap-1 mt-1 s-card">
+                <div class="service-card" data-aos="fade-down">
+                    <figure><img src="Images/icon/slider1.png" alt="slider1"></figure>
+                    <h3>GRAPHIC DESIGNING</h3>
+                    <p>Right from a Logo to Catalogs / 
+                        Brochures to large Banners, we 
+                        provide excellent designs for all size 
+                        of business units.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="/graphic.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <figure><img src="Images/icon/slider2.png" alt="slider2"></figure>
+                    <h3>WEBSITE DEVELOPMENT</h3>
+                    <p>Host of various Web services helps 
+                        you develop your presence over the 
+                        Internet to a global audience with 
+                        updated technology.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="/web.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-down">
+                    <figure><img src="Images/icon/SM.png" alt="slider3"></figure>
+                    <h3>SOCIAL <br> MEDIA <br> SERVICE</h3>
+                    <p>Social Media Marketing is in-thing 
+                        for any business to grow. We provide 
+                        these service to help our clients to 
+                        excel in their business and 
+                        ultimately larger profits.
+                    </p>
+                    
+                    <a href="/media.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <figure><img src="Images/icon/BRAND.png" alt="slider4"></figure>
+                    <h3>BRANDING & DIGITAL MARKETING</h3>
+                    <p>Customized services to enhance 
+                        Brand awareness across various 
+                        channels on Digital platform. Our 
+                        packages are flexible to fit in for any 
+                        scale of business houses.
+                    </p>
+                    <a href="/brand.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of Services section ====== -->
+
+ <!-- ====== How we work section ====== -->
+ <section class="work" id="work">
+    <div class="container position-relative">
+        <div class="work-para text-center" data-aos="fade-up">
+            <h1>HOW WE WORK</h1>
+            <h3 class="h3_margin">Our Process To Empower Brands.</h3>
+        </div>
+        <div class="work-hr flex gap-1">
+            <hr>
+            <h4>Project in steps</h4>
+        </div>
+        <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+            <div data-aos="zoom-in">
+                <h2>01.</h2>
+                <h5>Understand Client’s requirement</h5>
+            </div>
+            <div data-aos="zoom-in">
+                <h2>02.</h2>
+                <h5>Plan & Execute</h5>
+            </div>
+            <div data-aos="zoom-in">
+                <h2>03.</h2>
+                <h5>Design, Build & Maintain</h5>
+            </div>
+            <div data-aos="zoom-in">
+                <h2>04.</h2>
+                <h5>Brainstorm for new Growth strategy</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== End of How we work section ====== -->
+
+<!-- ====== portfolio section ====== -->
+<div class="container" id="portfolio">
+    <div class="portfo-center aos-init aos-animate" data-aos="fade-up">
+        <div class="w-50">
+            <div class="flex gap-1">
+                <hr class="gallary-hr1">
+                <h2>PORTFOLIO</h2>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="section-names">
+
+        <span  class="section-name" data-section="GRAPHIC DESIGNING">GRAPHIC DESIGNING</span>
+        <span class="section-name" data-section="SOCIAL MEDIA">SOCIAL MEDIA</span>
+        <span class="section-name" data-section="WEBSITE DEVELOPMENT">WEBSITE DEVELOPMENT</span>
+        <span class="section-name" data-section="YOUTUBE VIDEOS">YOUTUBE VIDEOS</span>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-section" id="GRAPHIC DESIGNING">
+            <div class="gallery">
+                <img src="/Images/GRAPHIC/1.jpg" alt="1" class="gallery-item">
+                <img src="/Images/GRAPHIC/2.jpg" alt="2" class="gallery-item">
+                <img src="/Images/GRAPHIC/3.jpg" alt="3" class="gallery-item">
+                <img src="/Images/GRAPHIC/4.jpg" alt="4" class="gallery-item">
+                <img src="/Images/GRAPHIC/5.jpg" alt="5" class="gallery-item">
+                <img src="/Images/GRAPHIC/6.jpg" alt="6" class="gallery-item">
+                <img src="/Images/GRAPHIC/7.jpg" alt="7" class="gallery-item">
+                <img src="/Images/GRAPHIC/8.jpg" alt="8" class="gallery-item">
+                <img src="/Images/GRAPHIC/9.jpg" alt="9" class="gallery-item">
+            </div>
+        </div>
+
+        <div class="gallery-section" id="SOCIAL MEDIA">
+            <div class="gallery">
+                <img src="/Images/social/1.jpg" alt="1" class="gallery-item">
+                <img src="/Images/social/2.jpg" alt="2" class="gallery-item">
+                <img src="/Images/social/3.jpg" alt="3" class="gallery-item">
+            </div>
+        </div>
+
+        <div class="gallery-section" id="WEBSITE DEVELOPMENT">
+            <div class="gallery">
+                <img src="/Images/website/1.jpg" alt="1" class="gallery-item">
+                <img src="/Images/website/2.jpg" alt="2" class="gallery-item">
+                <img src="/Images/website/3.jpg" alt="3" class="gallery-item">
+            </div>
+        </div>
+
+        <div class="gallery-section" id="YOUTUBE VIDEOS">
+            <div class="gallery">
+                <div class="video-item" data-video-id="VIDEO_ID_1">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vlL385W0-cI?si=hfAtHsuw54WFZKjN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popup-img">
+        <iframe id="popup-video" class="popup-content" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="java.js"></script>
+
+    <!-- ====== End of  portfolio section ====== -->
+
+     <!-- ====== enquiry section ====== -->
+     <div class="contact-container" id="contact-container">
+        <form action="" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get In Touch With Us</h2>
+                <hr>
+            </div>
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="Email-Id" placeholder="Your Email-Id" class="contact-inputs" required>
+            <input type="text" name="Mobile Number" placeholder="Mobile Number" class="contact-inputs" required>
+            <textarea name="Address" placeholder="Your Address" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="/Images/icon/arrow_icon.png" alt="" ></button>
+
+        </form>
+        <div class="contact-right">
+            <img src="/Images/bg/right_img.png" alt="">
+
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <div class="container flex flex-sb gap-2 flex-wrap">
+        <h6>Copyright @ Apex Solution
+        </h6>
+        <h6>All Rights Reserved.</h6>
+    </div>
+</div>
+</div>
+ <!-- ====== End of enquiry section ====== -->
+    <div class="footer">
+        <ul class="footer-menu">
+            <li>
+                <a class="footer-menu-link" href="#home">
+                    <i class="footer-menu-icon fas fa-home"></i>
+                    <div class="footer-menu-text">HOME</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#about us">
+                    <i class="footer-menu-icon fas fa-address-card"></i>
+                <div class="footer-menu-text">ABOUT US</div>
+                </a>
+            </li>
+            <li>
+                    <a class="footer-menu-link" href="#work">
+                        <i class="footer-menu-icon fas fa-briefcase"></i>
+                    <div class="footer-menu-text">HOW WE WORK</div>
+                    </a>
+                </li>
+            <li>
+                    <a class="footer-menu-link" href="#service">
+                        <i class="footer-menu-icon fas fa-box-open"></i>
+                    <div class="footer-menu-text">SERVICES</div>
+                    </a>
+                </li>
+            <li>
+                    <a class="footer-menu-link" href="#portfolio">
+                        <i class="footer-menu-icon fas fa-file-image"></i>
+                        <div class="footer-menu-text">GALLERY</div>
+                    </a>
+                </li>
+                
+            <li>
+                    <a class="footer-menu-link" href="#contact-container">
+                        <i class="footer-menu-icon fas fa-comment-alt"></i>
+                        <div class="footer-menu-text">ENQUIRY</div>
+                    </a>
+                </li>
+            <li>
+                    <a class="footer-menu-link" href="#share">
+                        <i class="footer-menu-icon fas fa-share"></i>
+                        <div class="footer-menu-text">SHARE</div>
+                    </a>
+                </li>
+        </ul>
+    </div>
+ 
+    <!-- end site wrapper -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+    
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
